@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BITS Placement Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #0072C6;
+            color: #FFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+		h1 {
+			margin: 0;
+			padding: 20px;
+			background-color: #003366;
+			color: #fff;
+			font-size: 28px;
+			text-align: center;
+		}
+		
+        nav {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding: 10px 20px;
+			background-color: #f2f2f2;
+			border-bottom: 1px solid #ccc;
+		}
+		nav a {
+			display: inline-block;
+			margin-right: 10px;
+			padding: 10px 20px;
+			background-color: #003366;
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+		nav a:hover {
+			background-color: #002147;
+			cursor: pointer;
+		}
+   .welcome {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 200px;
+			background-color: #003366;
+			border-radius: 5px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+			margin: 20px;
+			color: #fff;
+		}
+		.welcome h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		.welcome p {
+			font-size: 20px;
+			line-height: 1.5;
+			text-align: center;
+		}
+
+.link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 150px;
+  width: 200px;
+}
+
+.link-caption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+        .link-icon {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        
+        }
+        .company-caption {
+            font-size: 14px;
+            color: #999;
+        }
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+			margin: 20px;
+		}
+		.logo img {
+			width: 150px;
+			height: 150px;
+			object-fit: contain;
+			margin: 20px;
+		}
+    </style>
+</head>
+<body>
+    <center><img class="logo" src="B.png"></center>
+    <header>
+      <h1>BITS PLACEMENT PORTAL</h1>
+      <nav>
+        
+       
+        <a href="http://localhost/BITS portallogin.html">Logout</a>
+      </nav>
+    </header>
+    <section class="welcome">
+      <h1>Welcome to BITS Placement Portal</h1>
+    </section>
+    <section class="welcome">
+      <div class="link-container">
+        <div class="link">
+          <form action="http://localhost/BITS portal/addjob.php">
+            <button type="submit">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRONUSLjb9Ds5luppV2q8ViaL1QX5Ym0_AlSQ&usqp=CAU" alt="" class="link-icon">
+              <div class="link-caption">Add Job</div>
+            </button>
+          </form>
+        </div>
+        <div class="link">
+          <form action="viewappl.php?cname=<?php echo $_SESSION['username']; ?>">
+            <button type="submit">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUYghqvZo6gwwvMigh-axre1w3MfdWN2WZvQ&usqp=CAU" alt="View Applications Icon" class="link-icon">
+              <div class="link-caption">View Applications</div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@bitsplacementportal.com</p>
+        <p>Phone: +91-144-23456789</p>
+        <p>Address: Pilani,Goa, India</p>
+      </div>
+      <div class="social-media">
+        <h2>Connect with Us</h2>
+        <a href="https://www.facebook.com/BITSPlacementPortal"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/BITSPlcmntPrtl"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/company/bitsplacementportal/"><img src="linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </footer>
+  </body>
+</html>

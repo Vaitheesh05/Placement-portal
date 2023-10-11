@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <style>
+      body {
+	     background-image: url("BITS.jpg");
+    background-size: cover;
+    background-position: center;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #f8f8f8;
+      }
+	  .logo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 110px;
+		}
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      h1 {
+        text-align: center;
+        margin-top: 0;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+  <img class="logo" src="B.png">
+    <form action="myaccount2.php" method="post">
+      <h1>Application Form</h1><hr>
+	        <p>
+        <label for="Rollno">Roll no:</label>
+        <input type="text" name="Rollno" id="Rollno">
+      </p>
+      <p>
+        <label for="name">Applicant Name:</label>
+        <input type="text" name="name" id="name">
+      </p>
+	   <p>
+        <label for="Branch">Branch:</label>
+        <input type="text" name="Branch" id="Branch">
+      </p>
+      <p>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+      </p>
+      <p>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+      </p>
+      <p>
+        <label for="contact">Contact info:</label>
+        <input type="text" name="contact" id="contact">
+      </p>
+	   <p>
+        <label for="cname">Company Name:</label>
+        <input type="text" name="cname" id="cname">
+      </p>
+      <p>
+        <label for="job">Job Applied For:</label>
+        <input type="text" name="job" id="job">
+      </p>
+      <p>
+        <label for="skills">Skills:</label>
+        <input type="text" name="skills" id="skills">
+      </p>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </form>
+  </body>
+</html>

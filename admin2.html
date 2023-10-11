@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BIRLA INSTITUTE OF TECHNOLOGY- Admin Page</title>
+	<style>
+		body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+	#header {
+		background-color: #333;
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	#menu {
+		background-color: #eee;
+		float: left;
+		padding: 20px;
+		width: 200px;
+	}
+	
+	#content {
+		float: right; /* change float to right */
+		padding: 20px;
+		width: 400px;
+	}
+	
+	#menu ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#menu ul li {
+		margin-bottom: 10px;
+	}
+	
+	#menu ul li a {
+		color: #333;
+		display: block;
+		padding: 11px;
+		text-decoration: none;
+	}
+	
+	#menu ul li a:hover {
+		background-color: #333;
+		color: #fff;
+	}
+	
+	#dashboard {
+		background-color: #f1f1f1;
+		border: 2px solid #ccc;
+		padding: 22px;
+	}
+	
+	#dashboard h2 {
+		margin-top: 0;
+	}
+	
+	#dashboard ul {
+		list-style: none;
+		margin: 10;
+		padding: 0;
+	}
+	
+	#dashboard ul li {
+		margin-bottom: 10px;
+	}
+	
+	#dashboard ul li span {
+		font-weight: bold;
+		margin-right: 10px;
+	}
+
+#image-container {
+	        display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 22px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+			margin: 20px;
+}
+
+#image-container img {
+	max-width: 100%;
+	max-height: 110%;
+	object-fit: contain;
+	align-self: flex-start;
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>BIRLA INSTITUTE OF TECHNOLOGY</h1>
+		<p>Admin Page</p>
+	</div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="http://localhost/BITS portal/addcom.html">Add Company</a></li>
+			<li><a href="http://localhost/BITS portal/comrepo.php">Company Report</a></li>
+		<li><a href="viewappl.php?Name=<?php echo $_SESSION['username']; ?>">Applicant Report</a></li>
+			<li><a href="http://localhost/BITS portal/jobrep.php">Job Report</a></li>
+			<li><a href="http://localhost/BITS portal/login.html">Signout</a></li>
+		</ul>
+	</div>
+	
+	
+	<div id="image-container">
+		<img src="B.png">
+</body>
+</html>
